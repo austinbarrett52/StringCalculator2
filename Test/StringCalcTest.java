@@ -12,5 +12,10 @@ class StringCalcTest {
         assertEquals(0, StringCalc.Add(""));
         //test of one number
         assertEquals(5, StringCalc.Add("5"));
+        //test of two numbers
+        assertEquals(14, StringCalc.Add("6,8"));
+        assertEquals(-14, StringCalc.Add("-6,-8"));
+        assertEquals(2, StringCalc.Add("8,-6"));
+        assertEquals(0, StringCalc.Add("0,0"));
     }
 }
