@@ -20,5 +20,6 @@ public class StringCalc {
 
             return sum;
         }
+        //no change from phase 3 of assignment to phase 4
     }
 }
