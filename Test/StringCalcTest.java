@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class StringCalcTest {
-
+    // add messages to assertEquals statements
     @Test
     void AddTest() {
         //empty string, no numbers test
