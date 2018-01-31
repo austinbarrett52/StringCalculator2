@@ -10,8 +10,15 @@ public class StringCalc {
         //1 item
         else if (!numbers.contains(",")) {
             return Integer.parseInt(numbers);
-        } else {
-            return -1;
+        } else { //anything more than one item
+            int sum = 0;
+            String[] output = numbers.split("\\,");
+
+            for (int i = 0; i<output.length;i++){
+                sum += Integer.valueOf(output[i]);
+            }
+
+            return sum;
         }
     }
 }
