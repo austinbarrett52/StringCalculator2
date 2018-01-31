@@ -8,7 +8,9 @@ public class StringCalc {
             return 0;
         }
         //1 item
-        else{
+        else if (!numbers.contains(",")) {
+            return Integer.parseInt(numbers);
+        } else {
             return -1;
         }
     }
