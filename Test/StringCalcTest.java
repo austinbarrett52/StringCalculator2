@@ -23,4 +23,10 @@ class StringCalcTest {
         assertEquals(22, StringCalc.Add("2,1,9,10"));
         assertEquals(7, StringCalc.Add("1000,-1000,7"));
     }
+
+    @Test
+    void newLineTest(){
+        assertEquals(22, StringCalc.Add("2,1\n9,10"));
+        assertEquals(1, StringCalc.Add("1,\\n"));
+    }
 }

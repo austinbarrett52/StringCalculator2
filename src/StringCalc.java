@@ -12,7 +12,8 @@ public class StringCalc {
             return Integer.parseInt(numbers);
         } else { //anything more than one item
             int sum = 0;
-            String[] output = numbers.split("\\,");
+            String[] output = numbers.split("\\,|\n");
+            System.out.println(output);
 
             for (int i = 0; i<output.length;i++){
                 sum += Integer.valueOf(output[i]);
