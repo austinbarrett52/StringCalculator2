@@ -5,18 +5,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class StringCalcTest {
-
+    // add messages to assertEquals statements
     @Test
     void AddTest() {
         //empty string, no numbers test
         assertEquals(0, StringCalc.Add(""));
         //test of one number
         assertEquals(5, StringCalc.Add("5"));
+        assertEquals(123, StringCalc.Add("123"));
         //test of two numbers
         assertEquals(14, StringCalc.Add("6,8"));
         assertEquals(-14, StringCalc.Add("-6,-8"));
         assertEquals(2, StringCalc.Add("8,-6"));
         assertEquals(0, StringCalc.Add("0,0"));
+        assertEquals(300, StringCalc.Add("400,-100"));
         //test of many different lengths
         assertEquals(15, StringCalc.Add("1,2,3,4,5"));
         assertEquals(-15, StringCalc.Add("-1,-2,-3,-4,-5"));
