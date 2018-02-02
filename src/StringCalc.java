@@ -9,7 +9,7 @@ public class StringCalc {
         }
         //1 item
         else if (!numbers.contains(",")) {
-            int returnval = Integer.parseInt(numbers)
+            int returnval = Integer.parseInt(numbers);
             return returnval;
         } else { //anything more than one item
             int sum = 0;
